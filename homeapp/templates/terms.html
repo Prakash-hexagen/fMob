@@ -1,0 +1,30 @@
+{% extends "base/header.html" %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+{% block content %}
+<div class="image-aboutus-banner">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+         <h1 class="lg-text">Terms of Services</h1>
+       </div>
+    </div>
+</div>
+</div>
+<section class="serv">
+    <div class="container">
+      <div class="row">
+        <p style="font-family: cursive;color:var(--gray-dark)">This section is a legal agreement made between Flashmob and any user who wants to use the services of Flashmob. At the time of sign up, you’ll be provided with a copy of this which you need to agree to and click on agree to proceed forward. Once clicked, you’re supposed to abide by all the clauses mentioned herein. </p>
+        <ol style="font-family: cursive;color:var(--gray-dark)">
+          <li>The trademarks which include the logo, service marks, and product images present on this website are registered and unregistered trademarks of Flashmob.</li>
+          <li>As a user of Flashmob, you adhere to not use, modify, promote the trademarked items either for personal or commercial usage without written permission.</li>
+          <li>You’ll not misuse any of the Flashmob’s trademarked items present throughout the software. This is strictly prohibited and may lead to criminal offense. </li>
+          <li>Flashmob holds the right to terminate your user account if found breaching our terms and conditions mentioned herein, under which circumstances you’ll not be granted permission to access the information stored on Flashmob.</li>
+        </ol>  
+      </div>
+  </div> 
+
+    {% include "base/footer.html" %}
+{% endblock %}

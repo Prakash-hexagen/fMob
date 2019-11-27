@@ -1,0 +1,1 @@
+web: gunicorn flashmob.wsgi --log-file -

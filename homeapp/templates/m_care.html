@@ -1,0 +1,89 @@
+{% extends "base/header.html" %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+{% block content %}
+<div class="image-aboutus-banner">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+         <h1 class="lg-text">Modern Care</h1>
+       </div>
+    </div>
+</div>
+</div>
+<section class="serv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <h1 style="color: #2588c5">Care is the new marketing.</h1>
+          <p style="font-size:19px;font-family: cursive;">
+            It’s no secret that the demand for omnichannel customer experience is growing at a rapid pace. According to Gartner, by 2020, this demand will be amplified by the need for near perfect execution from brands.<br>75% of people now expect a consistent experience wherever they engage with brands, be it through social media, mobile, or even in person.<br>But while 80% of companies believe they deliver “superior experiences”, only 8% of customers agree.
+         </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="container">
+                                <div class="about-thumbnail homepage mb-100">
+                                 <div class="first-img wow fadeInUp" data-wow-delay="100ms">
+                                   <img src=" {% static 'assets/img/social-media-marketing_800x935.jpg' %}" alt="">
+                                 </div>
+                                 <div class="second-img wow fadeInUp" data-wow-delay="300ms">
+                                   <img src="{% static 'assets/img/shutterstock_800x935.jpg' %}" alt="">
+                                 </div>
+                                 <div class="third-img wow fadeInUp" data-wow-delay="500ms">
+                                   <img src="{% static 'assets/img/social_800x935.jpg' %}" alt="">
+                                 </div>
+                               </div>
+                             </div>
+        </div>
+    </div>
+    </div>
+  </section>
+    <section class="services pt-100 pb-50" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <h4>Take better care of your customers – at every turn.</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>Route</h4>
+                     <p>AI-powered automation <br>identifies and routes <br>customer care issues from various<br> channels high priority issues can be quickly addressed..</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>Resolve</h4>
+                     <p>Access 360-view of the<br> customer in order to provide<br> an accurate response to resolve<br> customer care issues<br> quickly and efficiently.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>Measure</h4>
+                     <p>Collect, aggregate, and report on customer satisfaction and agent performance, across multiple touchpoints to manage overall costs and reduce service times at scale to improve customer satisfaction.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+  </section>
+  <style type="text/css">
+  .a h1:after
+  {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: .6rem;
+    background: #2588c5;
+  } 
+  </style>
+    {% include "base/footer.html" %}
+{% endblock %}

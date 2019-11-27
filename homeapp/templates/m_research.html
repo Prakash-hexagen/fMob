@@ -1,0 +1,112 @@
+{% extends "base/header.html" %}
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+{% block content %}
+<div class="image-aboutus-banner">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+         <h1 class="lg-text">Modern Research</h1>
+       </div>
+    </div>
+</div>
+</div>
+<section class="serv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <h1 style="color: #2588c5">Research is real-time.<br>Discover. Understand. Act. Harness<br> the insights of now.</h1>
+          <p style="font-size:19px;font-family: cursive;">
+            With billions of customers sharing how they think, act, and feel, there’s an unprecedented opportunity for brands to know and serve customers like never before. Especially when 85% of consumers trust online reviews as much as personal recommendations, there is no time to waste.<br>Brands need a process for analyzing large volumes of data, sharing insights across the organization, and using them to drive meaningful customer experiences.
+         </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="container">
+                                <div class="about-thumbnail homepage mb-100">
+                                 <div class="first-img wow fadeInUp" data-wow-delay="100ms">
+                                   <img src="{% static 'assets/img/social-media-marketing_800x935.jpg' %}" alt="">
+                                 </div>
+                                 <div class="second-img wow fadeInUp" data-wow-delay="300ms">
+                                   <img src="{% static 'assets/img/shutterstock_800x935.jpg' %}" alt="">
+                                 </div>
+                                 <div class="third-img wow fadeInUp" data-wow-delay="500ms">
+                                   <img src="{% static 'assets/img/social_800x935.jpg' %}" alt="">
+                                 </div>
+                               </div>
+                             </div>
+        </div>
+    </div>
+    </div>
+  </section>
+    <section class="services pt-100 pb-50" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 mx-auto text-center">
+                  <div class="section-title mb-100">
+                     <h4>Understand your customer. Your locations. Your products.</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>Inform</h4>
+                     <p>Sophisticated market research made simple by converting public conversations and visuals to insights to action.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>​Mitigate</h4>
+                     <p>Stay alerted and informed about emerging situations across channels to actively manage a crisis.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>​Benchmark</h4>
+                     <p>Gauge yours brand’s health and compare performance against your competitors, industry, or overall market.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>Act for Locations</h4>
+                     <p>For any brick or mortar location, instantly capture on-the-ground feedback to improve the in-store customer experience.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>​Act for product</h4>
+                     <p>Identify product attributes which matter the most and drive a customer-centric product design process.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                  <!-- Single Service -->
+                  <div class="single-service">
+                     <h4>​Capture</h4>
+                     <p>Automatically flag mentions of your brand’s logo and products in photos from across the social web. No hashtag required.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+  </section>
+  <style type="text/css">
+  .a h1:after
+  {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin-top: .6rem;
+    background: #2588c5;
+  } 
+  </style>  
+{% include "base/footer.html" %}
+{% endblock %}
